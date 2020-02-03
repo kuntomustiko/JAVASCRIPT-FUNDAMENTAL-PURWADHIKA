@@ -98,11 +98,24 @@ console.log(heroes)
 // SPLICE, DELETE //
 ///////////////////
 
-// Splice, hapus data tertentu, yang lain geser
+// Splice, hapus data tertentu, yang lain geser, dan langsung mengubah data aslinya
 // Delete, akan menjadi undefined
 
-var words = ['Please', 'Save', 'Me', 'Now']
 
+
+var words = ['Please', 'Save', 'Me', 'Now']
+// menghapus dari index ke 1, sebanyak 0 dan tambahkan "I", "NEED", "HELP"
+words.splice(1, 0, "I", "NEED", "HELP")
+console.log(words)
+// ['Please', "I", "NEED", "HELP", 'Save', 'Me', 'Now']
+
+var words = ['Please', 'Save', 'Me', 'Now']
+// menghapus dari index ke 1, sebanyak 3 dan tambahkan "I", "NEED", "HELP"
+words.splice(1, 3, "I", "NEED", "HELP")
+console.log(words)
+// ['Please', "I", "NEED", "HELP"]
+
+var words = ['Please', 'Save', 'Me', 'Now']
 // Hapus mulai dari index 1, sebanyak 2 data
 words.splice(1, 2)
 console.log(words)
@@ -122,6 +135,7 @@ console.log(words)
 //////////
 
 // Copy sebagian data tanpa mengubah data aslinya
+// tidak mengubah data aslinya
 var hari = [
     'Sunday',
     'Monday',
