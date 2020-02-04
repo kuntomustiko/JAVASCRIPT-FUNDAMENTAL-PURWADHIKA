@@ -44,4 +44,5 @@ function twoFun(fn) {
     fn()
 }
 
+
 twoFun(oneFun)
