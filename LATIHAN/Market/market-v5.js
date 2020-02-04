@@ -22,6 +22,7 @@ var stringTampilDaftarNamaBuah = ""
 var daftarBuah = ['apel', 'jeruk', 'mangga']
 var hargaBuah = [1000, 2000, 3000]
 var qtyBuah = [10, 20, 30]
+var stockBuah = [40, 40, 40]
 
 var totalSeluruhHargaAkhir = 0
 var hargaAkhirPerBuah = []
@@ -135,11 +136,22 @@ do {
         // untuk memasukkan jumlah yang ingin di beli
         for (let x = 0; x < daftarBuah.length; x++) {
 
+            // do {
+            //     var entah = prompt(`Masukkan jumlah buah ${daftarBuah[x]} `)
+            //     qtyBuah.push(entah)
+            //     console.log("do while ke ")
+            //     beliBuahCondition++
+            // } while (beliBuahCondition <= daftarBuah.length);
+
+            // guru
             do {
-                var entah = prompt(`Masukkan jumlah buah ${daftarBuah[x]} `)
-                qtyBuah.push(entah)
-                beliBuahCondition++
-            } while (beliBuahCondition <= daftarBuah.length);
+                qtyBuah[x] = prompt(`Masukkan jumlah ${daftarBuah[x]}`)
+                if (qtyBuah[x] > stockBuah[x]) {
+                    alert(`Kesalahan input stock ${qtyBuah[x]} > ${stockBuah[x]} `)
+                }
+
+            } while (qtyBuah[x] > stockBuah[x]);
+            // selesai guru
 
             // menjumlahkan total setiap buah  
             hargaTotalPerBuah = qtyBuah[x] * hargaBuah[x];
@@ -153,8 +165,8 @@ do {
             alert(`Anda membeli ${daftarBuah[x]} \nHarga satuan Rp. ` + hargaBuah[x].toLocaleString() + ` \nJumlah ${qtyBuah[x]} buah \nHarga total Rp. ` + hargaTotalPerBuah.toLocaleString())
         }
 
-        // console.log(typeof (hargaAkhirPerBuah[1]))
-        // console.log(hargaAkhirPerBuah)
+        console.log(typeof (hargaAkhirPerBuah[1]))
+        console.log(typeof (hargaAkhirPerBuah))
         // console.log(totalSeluruhHargaAkhir)
         // console.log(daftarBuah)
         // console.log(qtyBuah)
