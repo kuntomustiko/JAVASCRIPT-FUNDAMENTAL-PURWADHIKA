@@ -46,3 +46,6 @@ function twoFun(fn) {
 
 
 twoFun(oneFun)
+
+// function expression 
+// digunakan ketika sebuah fucntion akan mengeluarkan output agar dapat langsung di simpan di dalam var
