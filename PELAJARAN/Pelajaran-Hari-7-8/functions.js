@@ -7,11 +7,12 @@
 
 // ketika function helo di panggil maka apapun yang ada di dalam function helo maka akan langsung dijalankan
 function helo() {
-
+    console.log('Hello ... ') s
 }
 
 helo()
 
+// 1 input, no input
 function greeting(name) {
     console.log("Hallo " + name)
 }
@@ -31,6 +32,28 @@ function intro(name, age, job) {
 
 intro("kamu", 12, "desainer")
 
+// no input, 1 output
+// kode setelah return tidak di baca
+function grav() {
+    console.log('Sebelum return')
+    return 9.8
+    console.log('Setelah return')
+}
+
+// var result = grav()
+// console.group(`Satuan gravitasi : ${result}`)
+
+// 2 input, 1 output
+// Variable x dan y merupakan variable 'local'
+// yang artinya hanya dapat diakses di dalam function sum
+// jika mencoba mengakses diluar function sum akan error
+function sum(x, y) {
+    return x + y
+}
+
+
+// Ini akan error karena tidak bisa mengakses variable di dalam function sum.
+// console.log(x);
 
 // kode di bawah return tidak akan dijalankan jika berada di sama badan program
 
@@ -67,11 +90,21 @@ function square(x, y) {
     return res
 }
 
-anonym(square)
+var hasil = anonym(square)
 
 /////////////////////
 // SORT : ADVANCE //
 ///////////////////
+
+// Sort menerima function dg dua parameter
+// function tsb mereturn salah satu dari 3 kemungkinan :
+//      1. nilai negatif
+//      2. nilai nol
+//      3. nilai positif
+
+// return negatif : posisi 'a' ada didepan 'b'
+// return nol : tidak bertukar posisi
+// return positif : posisi 'b' ada didepan 'a'
 
 // sort akan menjadikan isi array menjadi string lalu baru di urutkan dari setiap huruf string tersebut
 numArr = [40, 23, 1, 100, 2, 23]
