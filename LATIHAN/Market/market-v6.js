@@ -17,6 +17,7 @@ var fruits = {
 }
 
 
+
 function tampilListDaftarBuahAwal() {
     for (let y = 0; y < fruits.daftarBuah.length; y++) {
         stringTampilDaftarNamaBuah += "No. " + y + ". " + fruits.daftarBuah[y] + " || Harga Satuan " + fruits.hargaBuah[y] + " || Jumlah Stock " + fruits.qtyBuah[y] + "\n"
@@ -55,12 +56,12 @@ function tambahHapusNamaBuah() {
     return tambahHapusBuahVar
 }
 
-function inputHapusHargaBuah() {
+function tambahHapusHargaBuah() {
     var tambahHapusHargaBuahVar = parseInt(prompt('Tambah Harga Buah'))
     return tambahHapusHargaBuahVar
 }
 
-function inputHapusJumlahBuah() {
+function tambahHapusJumlahBuah() {
     var tambahHapusJumlahBuahVar = parseInt(prompt('Tambah Jumlah Buah'))
     return tambahHapusJumlahBuahVar
 }
@@ -116,9 +117,13 @@ do {
         pilihanMenu(uiYesNoVar)
     } else if (uiNomorMenu == 1) {
         // menu tambah buah
-        fruits.daftarBuah.push(tambahHapusNamaBuah())
-        fruits.hargaBuah.push(tambahHapusHargaBuah())
-        fruits.qtyBuah.push(tambahHapusJumlahBuah())
+        // fruits.daftarBuah.push(tambahHapusNamaBuah())
+        // fruits.hargaBuah.push(tambahHapusHargaBuah())
+        // fruits.qtyBuah.push(tambahHapusJumlahBuah())
+
+        fruits.push(
+            fruits.daftarBuah[tambahHapusNamaBuah()], fruits.hargaBuah[tambahHapusHargaBuah()], fruits.qtyBuah[tambahHapusJumlahBuah()]
+        )
 
         // untuk menampilkan list-list daftar buah ke bawah
         stringTampilDaftarNamaBuahVar = tampilListDaftarBuah()

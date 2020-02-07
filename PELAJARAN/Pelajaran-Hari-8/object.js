@@ -97,3 +97,13 @@ var person = {
 
 console.log(person.name)
 person.intro()
+
+// menambahkan property
+person.address = 'Summarecon'
+person.wakeUp = function () {
+    console.log('Hello, Good Morning ')
+}
+
+// menghapus property
+delete person.age
+console.log(person)
