@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Hari 12</title>
+    <script src="script.js"></script>
+    <style>
+        div {
+            border: 1px solid black;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Solve It 6</h1>
+        <p>Masukkan Angka:
+            <input type="text" id="programKuadrat">
+        </p>
+        <input type="button" value="submit" onclick="hasilSolveIt6()">
+        <h5 id="hasilProgramKuadrat">lorem</h5>
+    </div>
+    <div>
+        <h1>Solve It 7</h1>
+        <p>Masukkan Angka 1 : <input type="text" id="Solve-7-1"></p>
+        <p>Masukkan Angka 2 : <input type="text" id="Solve-7-2"></p>
+        <input type="button" value="submit" onclick="hasilSolveIt7()">
+        <h5 id="hasilProgramPangkat">lorem</h5>
+    </div>
+
+    <div>
+        <h1>Solve It 8</h1>
+        <p>Ketik Kalimat : <input type="text" id="Solve-8-kalimat"></p>
+        <p>Karakter Yang dicari : <input type="text" id="Solve-8-diCari"></p>
+        <input type="button" value="Cari" onclick="hasilSolveIt8()">
+        <h5 id="hasilProgramPencari">lorem</h5>
+    </div>
+    <div>
+        <h1>Solve It</h1>
+        <p>Masukkan Angka 1 : <input type="text" id="Solve-9-1"></p>
+        <p>Masukkan Angka 2 : <input type="text" id="Solve-9-2"></p>
+
+        <input type="submit" value="Kali X" onclick="kalkuKali()">
+        <input type="submit" value="Bagi :" onclick="kalkuBagi()">
+        <input type="submit" value="Tambah +" onclick="kalkuTambah()">
+        <input type="submit" value="Kurang -" onclick="kalkuKurang()">
+        <input type="submit" value="Modulus %" onclick="kalkuModulus()">
+        <input type="submit" value="Pangkat ^" onclick="kalkuPangkat()">
+
+        <h5 id="hasilOutput9"></h5>
+    </div>
+
+    <div>
+        <h1>Solve 10</h1>
+
+        <h5>1. Siapakah Presiden ke 3 Republik Indonesia?</h5>
+
+        <input type="radio" value="habibie" name="satu"> Prof B J Habibie
+        <input type="radio" value="wahid" name="satu"> Abdurrahman Wahid
+        <input type="radio" value="soekarno" name="satu"> Ir Soekarno
+        <input type="radio" value="jokowi" name="satu"> Joko Widodo
+
+        <h5>2. Berikut, adalah nama-nama bahasa pemrograman, kecuali...</h5>
+        <input type="radio" value="python" name="dua"> Python
+        <input type="radio" value="microbit" name="dua"> Micro:bit
+        <input type="radio" value="javascript" name="dua"> Javascript
+        <input type="radio" value="html" name="dua"> HTML
+
+        <h5>3. Apa lagu yang di duga plagiat oleh lagu sayang...</h5>
+
+        <input type="radio" value="qing" name="tiga"> Qing Fei De Yi
+        <input type="radio" value="ting" name="tiga"> Ting Hai
+        <input type="radio" value="mirai" name="tiga"> Mirai E Kiroro
+        <input type="radio" value="hau" name="tiga"> Hau Siang Hau Siang
+
+        <h5>4. Siapakah sosok di balik topeng batman</h5>
+
+        <input type="radio" value="natasha" name="empat"> Natasha Romanov
+        <input type="radio" value="peter" name="empat"> Peter Parker
+        <input type="radio" value="tony" name="empat"> Tony Stark
+        <input type="radio" value="bruce" name="empat"> Bruce Wayne
+
+        <br>
+        <br>
+        <input type="submit" value="SUBMIT" onclick="solve10()">
+        <h2 id="hasilSolve10"></h2>
+    </div>
+    <p style="margin-top: 500px;">sa</p>
+</body>
+
+</html>
