@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM TABLE</title>
+
+</head>
+
+<body>
+    <h1 style="text-align: center;">FORM</h1>
+
+    <form>
+        <p>
+            Nama : <input type="text" id="name">
+        </p>
+        <p>
+            Umur : <input type="text" id="age">
+        </p>
+        <p>
+            <!-- RadioButton -->
+            <!-- "name" harus sama agar dapat dipilih salah satu dari dua pilihan -->
+            <input type="radio" name="gender" id="gender"> Pria
+            <input type="radio" name="gender" id="gender"> Wanita
+        </p>
+        <p>
+            Skill:
+            <input type="checkbox" name="html" value="HTML 5"> HTML
+            <input type="checkbox" name="css" value="CSS 3"> CSS
+            <input type="checkbox" name="javascript" value="JS"> Javascript
+        </p>
+
+    </form>
+    <!-- Button agar di luar form, sehingga tidak terganggu dengan behavior form yang selalu refresh jika di klik -->
+    <!-- Jika di klik, akan run function submit -->
+    <input type="button" value="submit" onclick="submit()">
+    <p id="result">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aspernatur mollitia similique at dicta
+        natus dignissimos recusandae, nesciunt delectus! Velit quam ipsum amet quod illum doloremque alias, quidem
+        aliquid incidunt.
+    </p>
+    <script src="form.js"></script>
+</body>
+
+</html>
