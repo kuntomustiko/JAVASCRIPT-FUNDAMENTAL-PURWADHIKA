@@ -29,12 +29,12 @@
             <p>Nama : <input type="text"></p>
             <p>Harga : <input type="number"> - <input type="number"></p>
             <p>Category :
-                <select>
-                    <option value="">All</option>
+                <select id="catFilter">
+                    <!-- <option value="">All</option>
                     <option value="">Fast Food</option>
                     <option value="">Electronic</option>
                     <option value="">Cloth</option>
-                    <option value="">Fruit</option>
+                    <option value="">Fruit</option> -->
                 </select>
             </p>
         </fieldset>
@@ -44,61 +44,39 @@
             <legend>Input Data</legend>
             <table>
                 <tr>
-                    <td><input type="text"></td>
-                    <td><input type="number"></td>
+                    <td><input type="text" placeholder="name" id="nameInput"></td>
+                    <td><input type="number" placeholder="price" id="priceInput"></td>
                     <td>
-                        <select>
-                            <option value="">All</option>
+                        <select id="catInput">
+                            <!-- <option value="">All</option>
                             <option value="">Fast Food</option>
                             <option value="">Electronic</option>
                             <option value="">Cloth</option>
-                            <option value="">Fruit</option>
+                            <option value="">Fruit</option> -->
                         </select>
                     </td>
-                    <td><input type="text"></td>
+                    <td><input type="text" placeholder="stock" id="stockInput"></td>
                 </tr>
             </table>
+            <p><input type="button" value="input" onclick="funInputData()"></p>
+
         </fieldset>
         <!-- RENDER -->
 
         <fieldset>
             <legend>Tabel Data</legend>
             <table>
-                <tr>
+                <thead>
                     <th>Id</th>
                     <th>Category</th>
                     <th>Nama</th>
                     <th>Price</th>
                     <th>Stock</th>
-                </tr>
-                <tr>
-                    <td>1579581080923</td>
-                    <td>Fast Food</td>
-                    <td>Noodle</td>
-                    <td>2300</td>
-                    <td>9</td>
-                </tr>
-                <tr>
-                    <td>1579581080923</td>
-                    <td>Fast Food</td>
-                    <td>Noodle</td>
-                    <td>2300</td>
-                    <td>9</td>
-                </tr>
-                <tr>
-                    <td>1579581080923</td>
-                    <td>Fast Food</td>
-                    <td>Noodle</td>
-                    <td>2300</td>
-                    <td>9</td>
-                </tr>
-                <tr>
-                    <td>1579581080923</td>
-                    <td>Fast Food</td>
-                    <td>Noodle</td>
-                    <td>2300</td>
-                    <td>9</td>
-                </tr>
+                </thead>
+                <tbody id="render">
+
+                </tbody>
+                <!-- tfooter digunakan untuk baris terakhir yang biasanya digunakan untuk total-total nilai table -->
             </table>
         </fieldset>
     </form>

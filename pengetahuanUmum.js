@@ -5,3 +5,7 @@
 // `string ${variabel}`
 
 // javascript Hoisting
+
+
+
+//  '' --> kutip satu tidak bisa di enter
