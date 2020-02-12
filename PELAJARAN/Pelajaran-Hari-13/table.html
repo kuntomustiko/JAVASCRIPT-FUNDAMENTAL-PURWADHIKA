@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Hari ke 13</title>
+    <style>
+        table,
+        td,
+        th {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+    </style>
+    <script defer src="table.js"></script>
+</head>
+
+<!-- defer = untuk tambahan ketika memanggil file js di awal file, sehingga file js di panggil di awal tapi tidak langsung di jalankan -->
+
+<body>
+    <h1 style="text-align: center;">Market</h1>
+
+    <form>
+        <!-- FILTER -->
+        <fieldset>
+            <legend>Filter</legend>
+            <p>Nama : <input type="text"></p>
+            <p>Harga : <input type="number"> - <input type="number"></p>
+            <p>Category :
+                <select>
+                    <option value="">All</option>
+                    <option value="">Fast Food</option>
+                    <option value="">Electronic</option>
+                    <option value="">Cloth</option>
+                    <option value="">Fruit</option>
+                </select>
+            </p>
+        </fieldset>
+
+        <!-- INPUT -->
+        <fieldset>
+            <legend>Input Data</legend>
+            <table>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="number"></td>
+                    <td>
+                        <select>
+                            <option value="">All</option>
+                            <option value="">Fast Food</option>
+                            <option value="">Electronic</option>
+                            <option value="">Cloth</option>
+                            <option value="">Fruit</option>
+                        </select>
+                    </td>
+                    <td><input type="text"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <!-- RENDER -->
+
+        <fieldset>
+            <legend>Tabel Data</legend>
+            <table>
+                <tr>
+                    <th>Id</th>
+                    <th>Category</th>
+                    <th>Nama</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                </tr>
+                <tr>
+                    <td>1579581080923</td>
+                    <td>Fast Food</td>
+                    <td>Noodle</td>
+                    <td>2300</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>1579581080923</td>
+                    <td>Fast Food</td>
+                    <td>Noodle</td>
+                    <td>2300</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>1579581080923</td>
+                    <td>Fast Food</td>
+                    <td>Noodle</td>
+                    <td>2300</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>1579581080923</td>
+                    <td>Fast Food</td>
+                    <td>Noodle</td>
+                    <td>2300</td>
+                    <td>9</td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+
+</html>
