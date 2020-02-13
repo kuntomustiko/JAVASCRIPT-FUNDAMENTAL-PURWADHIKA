@@ -98,7 +98,7 @@ var filterName = () => {
         return val.name.toLowerCase().includes(_nameInput)
     })
 
-    // console.log(resultFilter);
+    console.log(resultFilter);
 
     var resProduct = resultFilter.map((obj) => {
         return `
@@ -125,19 +125,10 @@ var hargaAwal = () => {
     console.log(_hargaAkhir)
 
     var result = arrProduct.filter((val) => {
-
-        if (_hargaAwal == "" && _hargaAkhir == "") {
-            renderList()
-        } else if (_hargaAwal == "" || _hargaAkhir == "") {
-            renderList()
-        } else if (_hargaAkhir == "") {
-            return false
-        } else {
-            return val.price >= _hargaAwal && val.price <= _hargaAkhir
-        }
+        return val.price >= _hargaAwal && val.price <= _hargaAkhir
     })
 
-    // console.log(result)
+    console.log(result)
 
     var resProduct = result.map((obj) => {
         return `
@@ -157,24 +148,16 @@ var hargaAwal = () => {
 
 var hargaAkhir = () => {
     // Ambil data dari inputan user
-    var _hargaAwal = parseInt(document.getElementById("hargaAwalId").value)
-    console.log("awal" + _hargaAwal)
-    var _hargaAkhir = parseInt(document.getElementById("hargaAkhirId").value)
-    console.log(typeof (_hargaAkhir))
+    var _hargaAwal = document.getElementById("hargaAwalId").value
+    console.log(_hargaAwal)
+    var _hargaAkhir = document.getElementById("hargaAkhirId").value
+    console.log(_hargaAkhir)
 
     var result = arrProduct.filter((val) => {
-        if (_hargaAwal == "" && _hargaAkhir == "") {
-            renderList()
-        } else if (_hargaAwal == "" || _hargaAkhir == "") {
-            renderList()
-        } else if (_hargaAwal == "") {
-            return false
-        } else {
-            return val.price >= _hargaAwal && val.price <= _hargaAkhir
-        }
+
     })
 
-    // console.log(result)
+    console.log(result)
 
     var resProduct = result.map((obj) => {
         return `
@@ -219,7 +202,7 @@ var catFilter = () => {
             return _catFilter == val.category
         })
 
-        // console.log(result);
+        console.log(result);
 
         var resProduct = result.map((obj) => {
             return `
