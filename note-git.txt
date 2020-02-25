@@ -1,0 +1,65 @@
+git --version
+    Untuk melihat versi git 
+
+git config --global user.name yourUserName
+    untuk set username di git 
+
+git config --global user.email yourEmail
+    Untuk set email di git 
+
+git init 
+    Inisialisasi terhadapa folder projeck, agar di track oleh git
+
+// pindah dari untracked ke staging
+git add namaFile
+
+git add namaFile namaFile
+
+git add .
+
+// pindah (dikeluarkan) dari staging balik ke untracked
+git rm --cached namaFile
+
+// untuk memindahkan dai staging area ke commit area
+git commit -m "komenan Anda"
+
+git status
+    Untuk melihat status file saat ini 
+untracked/modified | staging | commit
+
+git log 
+    Memilih list commit dengan informasi lengkap
+
+git log --oneline 
+    Memilih list commit dengan informasi singkat
+
+git checkout unikIdCommit
+    Untuk melihat ke commit tertentu
+
+git checkout master 
+    Untuk kembali ke commit terakhir
+
+git revert unikIdCommit
+    Memberikan tanda silang terhadap commit tertentu, maka kode yang kita commit saat itu akan di hilangkan di versi terakhir.
+    Namun kita masih bisa melihat ke commit tsb (yang sudah di silang) dengan git checkout unikIdCommit yang di revert
+--> menghilangkan code tapi commit nya masih ada dan masih bisa di balikan lagi 
+
+
+git reset unikIdCommit 
+    Untuk menghapus commit tertentu, namun kode yang berhubungan dengan commit yang di hapus masih ada.
+
+git reset unikIdCommit --hard
+    Untuk menghapus commit tertentu dan juga kode yang berhubungan dengan commit tersebut. Proses ini tidak bisa di undo.
+  
+  
+U = Untracked
+M = Modifed
+
+:q --> quit 
+:wq --> write quit 
+
+
+-- RESET --
+hard --> code dan commit di hapus dan tidak bisa di balikan lagi 
+soft --> code tetap masih ada tapi commit nya yang hilangkan
+

@@ -107,3 +107,77 @@ person.wakeUp = function () {
 // menghapus property
 delete person.age
 console.log(person)
+
+
+/////////////////////////////
+
+var mobil = {
+    name: "Avanza",
+    color: "Grey",
+    price: 130000
+}
+var mobilxxx = {
+    xxx: mobil
+}
+var mobilqu = {
+    mobil
+}
+
+var month = "January"
+var day = "monday"
+var year = 2020
+
+// ketika kita ingin mengisi nama property sama dengan nama variabel yang akan menjadi nilai dari property tersebut
+// maka kita bisa menulis langsung dengan nama yang sama tersebut
+var date = {
+    month,
+    day,
+    year
+}
+
+var date2 = {
+    month: month,
+    day: day,
+    year: year
+}
+console.log(date);
+console.log(date2);
+
+var mobil = {
+    name: "avanza",
+    color: "grey",
+    price: 13000
+}
+
+//copy doang
+// {name: "avanza", color: "grey", price:13000}
+var mobilStd = mobil
+
+// copy doang
+// copy isi nya saja (isi dari objek mobil)
+// {name: "avanza", color: "grey", price:13000}
+var mobilDes = {
+    ...mobil
+}
+
+// copy + mengubah nilai pada property tertentu
+// {name: "Xpander", color: "grey", price:13000}
+var mobilChange = {
+    ...mobil,
+    name: "Xpander"
+}
+
+// copy + menambah property baru
+// {name: "avanza", color: "grey", price:13000, seats: 4}
+var mobilAdd = {
+    ...mobil,
+    seats: 4
+}
+
+// copy + menambah property baru + mengubah property tertentu
+// {name: "Xpander", color: "grey", price:13000, seats: 4}
+var mobilChangeAdd = {
+    ...mobil,
+    name: "Xpander",
+    seats: 4
+}

@@ -27,7 +27,11 @@ function times2(x) {
 var result = numArr.map((x) => {
     return x + 2
 })
+
+// [1,2,3,4,5]
 console.log(numArr);
+
+// [3,4,5,6,7]
 console.log(result);
 
 // FILTER
